@@ -12,9 +12,13 @@ public class Student {
 
 	private String favoriteLanguage;
 
+	private String[] operatingSystems;
+
 	private LinkedHashMap<String, String> countryOptions;
 
 	private LinkedHashMap<String, String> favoriteLanguageOptions;
+
+	private LinkedHashMap<String, String> operatingSystemsOptions;
 
 	public Student() {
 		countryOptions = new LinkedHashMap<String, String>();
@@ -30,6 +34,12 @@ public class Student {
 		favoriteLanguageOptions.put("C#", "C#");
 		favoriteLanguageOptions.put("NodeJS", "NodeJS");
 		favoriteLanguageOptions.put("GO", "GO");
+
+		operatingSystemsOptions = new LinkedHashMap<String, String>();
+
+		operatingSystemsOptions.put("Linux", "Linux");
+		operatingSystemsOptions.put("Mac OS", "Mac OS");
+		operatingSystemsOptions.put("windows", "windows");
 	}
 
 	public String getFirstName() {
@@ -78,6 +88,22 @@ public class Student {
 
 	public void setFavoriteLanguageOptions(LinkedHashMap<String, String> favoriteLanguageOptions) {
 		this.favoriteLanguageOptions = favoriteLanguageOptions;
+	}
+
+	public String[] getOperatingSystems() {
+		return operatingSystems;
+	}
+
+	public void setOperatingSystems(String[] operatingSystems) {
+		this.operatingSystems = operatingSystems;
+	}
+
+	public LinkedHashMap<String, String> getOperatingSystemsOptions() {
+		return operatingSystemsOptions;
+	}
+
+	public void setOperatingSystemsOptions(LinkedHashMap<String, String> operatingSystemsOptions) {
+		this.operatingSystemsOptions = operatingSystemsOptions;
 	}
 
 }
